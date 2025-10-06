@@ -51,14 +51,14 @@ Docker Compose → Environment reproducibility
 
 
 ### Setup Instructions
-
+```
 make dev          # Start Jupyter + MLflow
 make train-local  # Train locally
 make ray-job      # Submit Ray job
 make serve        # Launch API service
 make down         # Stop and clean up
 
-
+```
 
 ##  1. Quick Start
 
