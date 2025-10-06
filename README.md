@@ -81,7 +81,7 @@ make dev
 | Ray Dashboard | [http://localhost:8265](http://localhost:8265) |
 
 
- ##  2. Interactive Development
+##  *2. Interactive Development*
 
 - Fine-tuning interactively inside Jupyter:
 ```bash
