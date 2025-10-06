@@ -127,6 +127,9 @@ curl -X POST http://localhost:8000/predict \
 Response:
  {"label": 2}
 
+
+
+````
 <img width="967" height="308" alt="image" src="https://github.com/user-attachments/assets/7a9c3ccd-39bc-450c-9cb8-f261b5960c33" />
 <img width="1648" height="769" alt="image" src="https://github.com/user-attachments/assets/10946582-b907-40ad-9ccd-f0387aba7445" />
 <img width="1700" height="878" alt="image" src="https://github.com/user-attachments/assets/11a6748f-4e43-4549-bbc5-83401c0c6ea9" />
