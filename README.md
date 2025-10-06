@@ -24,8 +24,9 @@ The goal is to showcase:
 ├── docs/                 # Architecture, setup & technology explanations
 │   ├── architecture.md
 │   ├── setup.md
-│   └── tech_choices.md```
+│   └── tech_choices.md
 
+```
 
 ### Architecture Overview
 
