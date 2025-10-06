@@ -13,7 +13,7 @@ The goal is to showcase:
 
 ### Structure
 
-├── README.md
+\\\├── README.md
 ├── docker-compose.yml
 ├── Makefile
 ├── requirements.txt
@@ -24,7 +24,7 @@ The goal is to showcase:
 ├── docs/                 # Architecture, setup & technology explanations
 │   ├── architecture.md
 │   ├── setup.md
-│   └── tech_choices.md
+│   └── tech_choices.md\\\
 
 
 ### Architecture Overview
@@ -80,7 +80,7 @@ make dev
 | Ray Dashboard | [http://localhost:8265](http://localhost:8265) |
 
 
- __##  2. Interactive Development__
+ ##  2. Interactive Development
 
 - Fine-tuning interactively inside Jupyter:
 ```bash
