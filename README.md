@@ -31,13 +31,13 @@ The goal is to showcase:
 ### Architecture Overview
 
 Core components:
-
+```
 Jupyter → Interactive experiments
 Ray → Job orchestration & resource management
 MLflow → Metrics & model tracking
 FastAPI → Lightweight inference service
 Docker Compose → Environment reproducibility
-
+```
 
 ### Technology Rationale
 
