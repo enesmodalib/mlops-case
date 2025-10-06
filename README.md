@@ -93,7 +93,7 @@ Loads a small subset of the __AG News__ dataset
 Fine-tunes distilbert-base-uncased on CPU
 Logs metrics to __MLflow__
 
-__##  3. Job Scheduling(Production Mode)__
+##  3. Job Scheduling(Production Mode)
 -Submit a job to Ray for scheduled/distributed training:
 ```bash
 make ray-job
@@ -106,14 +106,14 @@ ray job submit \
   --working-dir /app \
   -- python3 -m src.ray_entry --config configs/train.yaml --cpus 2
 
-__##  4. Experiment Tracking with MLflow__
+##  4. Experiment Tracking with MLflow
 
 -MLflow UI → http://localhost:5000
 -Logs metrics: accuracy, f1_macro, loss
 -Stores model artifacts under /artifacts/models/ag_news_distilbert_cpu
 -Allows version tracking and future comparisons
 
-__##  5. Deployment (Inference API)__
+##  5. Deployment (Inference API)
 Launch inference service:
 ```bash
 make serve
