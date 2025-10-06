@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  jupyter:
+    image: python:3.10-slim
+    container_name: mlops_cpu_jupyter
+    working_dir: /work
+    volumes:
+      - .:/work
+    ports:
+      - "8889:8888"
+    command: bash -c "pip install -r requirements.txt && jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root"
+
+  mlflow:
+    image: python:3.10-slim
+    container_name: mlops_cpu_mlflow
+    working_dir: /work
+    volumes:
+      - .:/work
+    environment:
+      - MLFLOW_TRACKING_URI=http://0.0.0.0:5000
+    ports:
+      - "5000:5000"
+    command: bash -c "pip install mlflow && mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root /work/artifacts --host 0.0.0.0 --port 5000"
+
+  ray:
+    image: rayproject/ray:2.10.0-py310
+    container_name: mlops_cpu_ray_head
+    ports:
+      - "8265:8265"
+      - "6379:6379"
+    command: ray start --head --dashboard-host=0.0.0.0
