@@ -1,0 +1,4 @@
+ray job submit \
+  --address http://127.0.0.1:8265 \
+  --working-dir /app \
+  -- python3 -m src.ray_entry --config configs/train.yaml --cpus 2
