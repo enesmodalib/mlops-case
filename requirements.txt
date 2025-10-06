@@ -1,0 +1,9 @@
+torch
+transformers
+datasets
+mlflow
+fastapi
+uvicorn
+ray[default]
+pandas
+scikit-learn
