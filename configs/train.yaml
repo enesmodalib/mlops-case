@@ -1,0 +1,7 @@
+model_name: distilbert-base-uncased
+dataset_name: ag_news
+num_train_epochs: 1
+per_device_train_batch_size: 16
+learning_rate: 5e-5
+output_dir: artifacts/models/ag_news_distilbert_cpu
+logging_dir: artifacts/logs
